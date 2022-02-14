@@ -1,0 +1,33 @@
+
+.page {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+  }
+
+.fade-appear,
+.fade-enter {
+    left: -100% !important;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    left: 0 !important;
+    transition: all 1000ms linear 500ms;
+}
+
+.fade-exit {
+  left: 0 !important;
+}
+
+.fade-exit.fade-exit-active {
+    left: 100% !important;
+    transition: all 1000ms linear;
+}
+
+
+.active-nav{
+  background-color: aqua;
+  color: wheat;
+}
